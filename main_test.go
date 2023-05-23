@@ -14,8 +14,8 @@ var _ = Describe("Api Todo List", func() {
 	dbCredential := model.Credential{
 		Host:         "localhost",
 		Username:     "postgres",
-		Password:     "postgres",
-		DatabaseName: "kampusmerdeka",
+		Password:     "root",
+		DatabaseName: "rg_database",
 		Port:         5432,
 		Schema:       "public",
 	}

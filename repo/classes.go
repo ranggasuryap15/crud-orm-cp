@@ -15,5 +15,8 @@ func NewClassRepo(db *gorm.DB) ClassRepo {
 }
 
 func (c ClassRepo) Init(data []model.Class) error {
+	if result := c.db.Create(&data); result != nil {
+		return result.Error
+	}
 	return nil // TODO: replace this
 }
